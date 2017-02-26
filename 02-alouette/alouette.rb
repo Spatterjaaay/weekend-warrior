@@ -19,13 +19,13 @@ class Alouette
   def self.verse(number)
     verse_a = "Je te plumerai #{@lines[number]}.\n" * 2
     verse_b = ""
-    # v_lines = 
+
     lines_for_verse(number).each do |line|
-       verse_b += line * 2
+       verse_b += "#{line}\n" * 2
     end
 
-    verse_c = "Alouette! " * 2
-    verse_d = "A-a-a-ah "
+    verse_c = "Alouette!\n" * 2
+    verse_d = "A-a-a-ah"
 
 
     return verse_a + verse_b + verse_c + verse_d
